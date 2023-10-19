@@ -1,17 +1,83 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-  <title>Bootstrap 5 Layout</title>
+  <title>Pirate Cove</title>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Content starts here -->
-  <p>Testing: 1, 2, 3, 4</p>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <span class="navbar-brand">Pirate Cove</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="article.html">Article</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photos.html">Photos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Closing scripts here -->
+  <header class="text-light text-center py-5">
+    <h1 class="display-4">Ship's Log</h1>
+    <p class="lead">A diary by Capt. Aislyn "Aye Aye" Gaddis</p>
+  </header>
+
+  <div class="container mt-4">
+    <h2>Thar be monsters in the sea</h2>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="img/kraken01.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">Gethgormag</h5>
+            <p class="card-text">Crimp hulk blow the man down galleon splice the main brace gabion lanyard nipperkin barque deadlights. Scurvy flogging Sea Legs crow's nest prow booty chase guns galleon gangway hands. Carouser run a shot across the bow Sea Legs trysail chantey holystone ballast sutler measured fer yer chains clap of thunder.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/kraken02.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">Sornakzor</h5>
+            <p class="card-text">Booty grapple spanker clap of thunder reef dead men tell no tales black spot prow lad fore. Cat o'nine tails stern parrel blow the man down Gold Road walk the plank black spot sheet jack boom. Pirate knave warp hearties Pirate Round gunwalls rutters run a rig mizzen draught.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/kraken03.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">Nakgharnak</h5>
+            <p class="card-text">Gibbet Sink me Cat o'nine tails pirate reef sails ballast knave tackle run a rig log. Sea Legs bilge water brig deadlights lee matey Pieces of Eight transom Arr heave down. Chase nipper marooned hempen halter sheet spyglass pillage topsail me American Main.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="p-3 text-center text-light">
+    <span>Site by Aislyn Gaddis</span>
+  </footer>
+    <!-- Closing scripts here -->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
