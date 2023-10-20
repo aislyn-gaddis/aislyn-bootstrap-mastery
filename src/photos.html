@@ -38,8 +38,11 @@
     <p class="lead">A diary by Capt. Aislyn "Aye Aye" Gaddis</p>
   </header>
 
+<!-- I used ChatGPT in the code chunk below to troubleshoot the carousel controls being outside of the photos on medium and large screen sizes. I copy and pasted this chunk into it and told it "My controls are outside the photos except on a small screen, how do I fix that?" It told me to add line 44. Previously, I had given each carousel item it's own div with class="col-md-8 offset-md-2." -->
+
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="col-md-8 offset-md-2 position-relative">
+    <div class="col-md-8 offset-md-2 position-relative"> 
+      <!-- the line above was written by ChatGPT. It tells the carousel to only use 8 columns when on medium or larger screen, and to skip the first two columns. Position-relative moves the controls relative to their normal position. -->
       <div class="carousel-inner py-5">
         <div class="carousel-item active">
             <img src="img/kraken01.jpg" class="d-block w-100" alt="a Gethgormag">
@@ -68,6 +71,7 @@
   <footer class="p-3 text-center text-light">
     <span>Site by Aislyn Gaddis</span>
   </footer>
+  
     <!-- Closing scripts here -->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
